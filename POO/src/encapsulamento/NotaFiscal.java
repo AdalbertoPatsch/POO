@@ -3,12 +3,12 @@ package encapsulamento;
 public class NotaFiscal {
 
 	private int numero;
-	private String data;
+	private Data data;
 
 	private Vendedor vendedor;
 	private Produto[] produtos; // 3 no maximo
 
-	public NotaFiscal(int numero, String data, Vendedor vendedor) {
+	public NotaFiscal(int numero, Data data, Vendedor vendedor) {
 		produtos = new Produto[3];
 		this.numero = numero;
 		this.data = data;
@@ -66,13 +66,13 @@ public class NotaFiscal {
 
 
 
-	public String getData() {
+	public Data getData() {
 		return data;
 	}
 
 
 
-	public void setData(String data) {
+	public void setData(Data data) {
 		this.data = data;
 	}
 
