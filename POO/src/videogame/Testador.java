@@ -6,8 +6,6 @@ public class Testador {
 
 		Wii wii = new Wii("Core 2 duo", 20, Midia.DVD);
 
-		VideoGame vg = new
-
 		System.out.println(wii);
 
 		Xbox xbox = new Xbox("celeron", 120, Midia.DVD, "Xbox 360");
