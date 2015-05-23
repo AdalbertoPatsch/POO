@@ -1,35 +1,27 @@
 package arraylist;
 
-public class SuperHeroi implements IHeroi, Comparable<SuperHeroi>{
-	
+public class SuperHeroi implements IHeroi, Comparable<IHeroi> {
+
 	private String nome;
-	
+
 	private String identidadeSecreta;
-	
+
 	private int forca;
 
-	
-	
 	public SuperHeroi(String nome, String identidadeSecreta) {
-		
+
 		this.nome = nome;
 		this.identidadeSecreta = identidadeSecreta;
 	}
-
-	
 
 	public String getNome() {
 		return nome;
 	}
 
-
-
 	@Override
 	public String getIdentidadeSecreta() {
 		return identidadeSecreta;
 	}
-
-
 
 	@Override
 	public int hashCode() {
@@ -41,8 +33,6 @@ public class SuperHeroi implements IHeroi, Comparable<SuperHeroi>{
 						.hashCode());
 		return result;
 	}
-
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -61,33 +51,16 @@ public class SuperHeroi implements IHeroi, Comparable<SuperHeroi>{
 		return true;
 	}
 
-
-
-	@Override
-	public int compareTo(SuperHeroi o) {
-		
-		return this.getIdentidadeSecreta().compareTo(o.getIdentidadeSecreta());
-	}
-
-
-
 	public int getForca() {
 		return forca;
 	}
-
-
 
 	public void setForca(int forca) {
 		this.forca = forca;
 	}
 
-
-
-	
-
-
-
-	
-	
-	
+	@Override
+	public int compareTo(IHeroi o) {
+		return this.getIdentidadeSecreta().compareTo(o.getIdentidadeSecreta());
+	}
 }
