@@ -7,7 +7,7 @@ package polimorfismo.exemplo1;
  * @author crfranco
  *
  */
-public abstract class Funcionario {
+public abstract class Funcionario implements Calculadora {
 
 	protected int matricula;
 	protected String nome;
@@ -18,8 +18,6 @@ public abstract class Funcionario {
 		this.matricula = matricula;
 		this.nome = nome;
 	}
-
-	public abstract double calcularSalario();
 
 	@Override
 	public String toString() {
