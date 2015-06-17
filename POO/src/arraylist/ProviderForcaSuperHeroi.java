@@ -6,7 +6,7 @@ public class ProviderForcaSuperHeroi implements Comparator<IHeroi>{
 
 	@Override
 	public int compare(IHeroi o1, IHeroi o2) {
-		return o1.getForca() - o2.getForca();
+		return (o1.getForca() - o2.getForca());
 	}
 
 	
