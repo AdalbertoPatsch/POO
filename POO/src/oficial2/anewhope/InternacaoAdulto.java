@@ -46,8 +46,7 @@ public class InternacaoAdulto extends Internacao implements Internavel {
 	}
 
 	@Override
-	public void daAlta(Paciente paciente) {
-		// TODO Auto-generated method stub
+	public void daAlta(Paciente paciente, Hospital hospital) {
 
 	}
 

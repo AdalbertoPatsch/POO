@@ -4,6 +4,6 @@ public interface Internavel {
 
 	void interna(Hospital hospital);
 
-	void daAlta(Paciente paciente);
+	void daAlta(Paciente paciente, Hospital hospital);
 
 }
